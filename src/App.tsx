@@ -1055,7 +1055,7 @@ export default function App() {
         }
         @media (max-width: 640px) {
           .hero-cta-button {
-            padding: 8px 17px !important;
+            padding: 13px 25px !important;
           }
           section > .container > div[style*="grid-template-columns: repeat(5, 1fr)"],
           section > .container > div[style*="grid-template-columns: repeat(2, 1fr)"] {
