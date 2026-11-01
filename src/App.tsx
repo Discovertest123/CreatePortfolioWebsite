@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import ecommerceProjectImage from './assets/ecommerce-project.png'
 import natdoctorProjectImage from './assets/natdoctor-project.jpg'
 import sarfarajPortrait from './assets/sarfaraj-about.jpeg'
 import siteLogo from './assets/site-logo.svg'
@@ -62,16 +63,16 @@ const PROJECTS = [
     tools: 'Custom HTML • Bootstrap',
     category: ['wordpress', 'uiux'],
     image: natdoctorProjectImage,
-    href: 'natdoctor.html',
+    href: '#/healthcare-website',
   },
   {
-    title: 'eCommerce Store',
-    desc: 'Full-featured WooCommerce store with custom product pages, optimized checkout flow, and payment integrations.',
-    services: 'WooCommerce • WordPress • UI/UX',
-    tools: 'Figma • WordPress • WooCommerce',
-    category: ['wordpress', 'woocommerce'],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format',
-    href: '#',
+    title: 'E-commerce Website Design',
+    desc: 'Designed and developed a visually engaging e-commerce website with custom product designs and graphics, consistent branding, strong product presentation, and a smooth responsive shopping experience.',
+    services: 'E-commerce Website Design & Development • Product Design • Graphics Design',
+    tools: 'WordPress • Elementor Pro • Premium Theme • Canva / Photoshop',
+    category: ['wordpress', 'woocommerce', 'uiux'],
+    image: ecommerceProjectImage,
+    href: '#/ecommerce-website',
   },
   {
     title: 'SaaS Product Website',

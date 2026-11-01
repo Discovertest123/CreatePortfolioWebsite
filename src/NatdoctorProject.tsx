@@ -78,11 +78,11 @@ export default function NatdoctorProject() {
     <div className={`app-shell project-shell${darkMode ? ' dark-theme' : ''}`}>
       <header className="project-header">
         <div className="container project-header-inner">
-          <a className="site-logo-lockup" href="index.html#home" aria-label="Back to Sarfaraj Khan portfolio">
+          <a className="site-logo-lockup" href="#home" aria-label="Back to Sarfaraj Khan portfolio">
             <img src={siteLogo} alt="" />
           </a>
           <div className="project-header-actions">
-            <a className="project-back-link" href="index.html#work">
+            <a className="project-back-link" href="#work">
               <span aria-hidden="true">←</span> Back to work
             </a>
             <button
@@ -240,7 +240,7 @@ export default function NatdoctorProject() {
       <footer className="project-footer">
         <div className="container">
           <span>© {new Date().getFullYear()} Sarfaraj Khan</span>
-          <a href="index.html#work">Back to all work</a>
+          <a href="#work">Back to all work</a>
         </div>
       </footer>
     </div>
