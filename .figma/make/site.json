@@ -1,0 +1,10 @@
+{
+  "description": "Showcases a professional portfolio highlighting web design, WordPress development, UI/UX skills, and project experience to attract clients and employers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
