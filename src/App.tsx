@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import natdoctorProjectImage from './assets/natdoctor-project.jpg'
 import sarfarajPortrait from './assets/sarfaraj-about.jpeg'
 import siteLogo from './assets/site-logo.svg'
 
@@ -55,12 +56,13 @@ const SERVICES = [
 
 const PROJECTS = [
   {
-    title: 'Business Landing Page',
-    desc: 'A clean, conversion-focused landing page built with WordPress and Elementor, featuring responsive layouts and custom sections.',
-    services: 'WordPress • UI/UX • Elementor',
-    tools: 'Figma • WordPress • Elementor',
-    category: ['wordpress', 'landing'],
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&auto=format',
+    title: 'Healthcare Website',
+    desc: 'Designed and developed a professional healthcare website with responsive layouts, clear service sections, wellness resources, and user-friendly consultation booking options.',
+    services: 'Web Design • Front-End Development',
+    tools: 'Custom HTML • Bootstrap',
+    category: ['wordpress', 'uiux'],
+    image: natdoctorProjectImage,
+    href: 'natdoctor.html',
   },
   {
     title: 'eCommerce Store',
@@ -69,6 +71,7 @@ const PROJECTS = [
     tools: 'Figma • WordPress • WooCommerce',
     category: ['wordpress', 'woocommerce'],
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format',
+    href: '#',
   },
   {
     title: 'SaaS Product Website',
@@ -77,6 +80,7 @@ const PROJECTS = [
     tools: 'Figma • WordPress • Elementor',
     category: ['uiux', 'wordpress'],
     image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop&auto=format',
+    href: '#',
   },
   {
     title: 'Agency Portfolio',
@@ -85,6 +89,7 @@ const PROJECTS = [
     tools: 'Figma • WordPress • Divi',
     category: ['uiux', 'wordpress'],
     image: 'https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=600&h=400&fit=crop&auto=format',
+    href: '#',
   },
   {
     title: 'Real Estate Landing Page',
@@ -93,6 +98,7 @@ const PROJECTS = [
     tools: 'Figma • WordPress • Elementor',
     category: ['landing', 'wordpress'],
     image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop&auto=format',
+    href: '#',
   },
   {
     title: 'Digital Marketing Agency',
@@ -101,6 +107,7 @@ const PROJECTS = [
     tools: 'Figma • WordPress • Elementor',
     category: ['wordpress', 'uiux'],
     image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=400&fit=crop&auto=format',
+    href: '#',
   },
 ]
 
@@ -814,7 +821,7 @@ export default function App() {
                   <div style={{ fontSize: '12px', color: '#9CA3AF', marginBottom: '20px' }}>
                     <span style={{ fontWeight: 600, color: '#374151' }}>Tools: </span>{project.tools}
                   </div>
-                  <a href="#" style={{ fontSize: '13px', fontWeight: 600, color: '#5DD62C', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                  <a href={project.href} style={{ fontSize: '13px', fontWeight: 600, color: '#5DD62C', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
                     View Project →
                   </a>
                 </div>

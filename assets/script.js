@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectGrid = filterContainer?.nextElementSibling;
   const projectCards = projectGrid ? Array.from(projectGrid.children) : [];
   const projectCategories = [
-    ['wordpress', 'landing'],
+    ['wordpress', 'uiux'],
     ['wordpress', 'woocommerce'],
     ['uiux', 'wordpress'],
     ['uiux', 'wordpress'],

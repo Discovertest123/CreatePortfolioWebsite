@@ -21,3 +21,30 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+@media (max-width: 900px) {
+  #home {
+    overflow-x: hidden;
+  }
+
+  .website-build-showcase {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .tool-figma {
+    left: 4px;
+  }
+
+  .tool-wordpress {
+    right: 4px;
+  }
+
+  .particle-one {
+    left: 0;
+  }
+
+  .particle-two {
+    right: 0;
+  }
+}

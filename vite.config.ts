@@ -16,6 +16,12 @@ export default defineConfig(({ mode }) => {
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          natdoctor: path.resolve(__dirname, 'natdoctor.html'),
+        },
+      },
     },
     plugins: [
 react(),

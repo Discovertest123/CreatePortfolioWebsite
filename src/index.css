@@ -1594,22 +1594,35 @@ h6 {
 }
 
 @media (max-width: 900px) {
+  #home {
+    overflow-x: hidden;
+  }
+
   .hero-main {
     grid-template-columns: 1fr;
     gap: 52px;
   }
 
   .website-build-showcase {
+    width: 100%;
     max-width: 560px;
     justify-self: center;
   }
 
   .tool-figma {
-    left: -10px;
+    left: 4px;
   }
 
   .tool-wordpress {
-    right: -8px;
+    right: 4px;
+  }
+
+  .particle-one {
+    left: 0;
+  }
+
+  .particle-two {
+    right: 0;
   }
 }
 
