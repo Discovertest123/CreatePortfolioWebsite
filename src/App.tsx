@@ -1,8 +1,20 @@
 import { useEffect, useRef, useState } from 'react'
+import automotiveProjectImage from './assets/automotive-project.png'
+import clinicalImmunologyProjectImage from './assets/clinical-immunology-project.png'
 import ecommerceProjectImage from './assets/ecommerce-project.png'
+import hvacProjectImage from './assets/hvac-project.png'
 import natdoctorProjectImage from './assets/natdoctor-project.jpg'
+import psychologyProjectImage from './assets/psychology-project.png'
 import sarfarajPortrait from './assets/sarfaraj-about.jpeg'
 import siteLogo from './assets/site-logo.svg'
+import toolAi from './assets/tool-ai.png'
+import toolCanva from './assets/tool-canva.png'
+import toolElementor from './assets/tool-elementor.png'
+import toolFigma from './assets/tool-figma.png'
+import toolHtml from './assets/tool-html.png'
+import toolMailchimp from './assets/tool-mailchimp.png'
+import toolShopify from './assets/tool-shopify.png'
+import toolWordPress from './assets/tool-wordpress.png'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -75,40 +87,40 @@ const PROJECTS = [
     href: '#/ecommerce-website',
   },
   {
-    title: 'SaaS Product Website',
-    desc: 'Modern SaaS website with feature sections, pricing table, and testimonials, fully responsive across all devices.',
-    services: 'UI/UX • WordPress • Elementor',
-    tools: 'Figma • WordPress • Elementor',
+    title: 'Commercial & Industrial HVAC Website',
+    desc: 'A professional HVAC website designed and developed to showcase industrial cooling solutions, air conditioning systems, ventilation products, and technical services through a clean, responsive, and user-friendly interface.',
+    services: 'Website Design • Front-End Development',
+    tools: 'Custom HTML • CSS • Bootstrap',
+    category: ['uiux'],
+    image: hvacProjectImage,
+    href: '#/hvac-website',
+  },
+  {
+    title: 'Psychology & Mental Wellness Platform',
+    desc: 'Designed a clean, engaging, and user-friendly psychology website UI with educational articles, interactive tests, self-assessment tools, and expert-backed resources.',
+    services: 'UI Design • Website Design • WordPress Development',
+    tools: 'WordPress • Elementor Pro',
     category: ['uiux', 'wordpress'],
-    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop&auto=format',
-    href: '#',
+    image: psychologyProjectImage,
+    href: '#/psychology-website',
   },
   {
-    title: 'Agency Portfolio',
-    desc: 'Creative agency portfolio with animated sections, project showcases, and a modern visual identity.',
-    services: 'UI/UX • WordPress • Divi',
-    tools: 'Figma • WordPress • Divi',
+    title: 'Clinical Immunology Education Platform',
+    desc: 'Designed a simple, clean, and professional educational website UI for clinical immunology resources, board preparation tools, and AI-powered learning solutions.',
+    services: 'UI Design • WordPress Website Development',
+    tools: 'WordPress • Gutenberg Editor',
     category: ['uiux', 'wordpress'],
-    image: 'https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=600&h=400&fit=crop&auto=format',
-    href: '#',
+    image: clinicalImmunologyProjectImage,
+    href: '#/clinical-immunology-website',
   },
   {
-    title: 'Real Estate Landing Page',
-    desc: 'High-converting real estate landing page with property listings, contact forms, and CTA optimization.',
-    services: 'Landing Page • WordPress • Elementor',
-    tools: 'Figma • WordPress • Elementor',
-    category: ['landing', 'wordpress'],
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop&auto=format',
-    href: '#',
-  },
-  {
-    title: 'Digital Marketing Agency',
-    desc: 'Full website redesign for a digital marketing agency, improving visual hierarchy and user engagement.',
-    services: 'WordPress • UI/UX • WooCommerce',
-    tools: 'Figma • WordPress • Elementor',
+    title: 'Automotive Rental & Exotic Car Website',
+    desc: "Designed a simple, clean, and professional business website based on the client's requirements, with a custom logo and organized layouts for exotic car rental services and vehicle options.",
+    services: 'UI Design • WordPress Website Development • Logo Design',
+    tools: 'WordPress • Gutenberg Block Editor',
     category: ['wordpress', 'uiux'],
-    image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=400&fit=crop&auto=format',
-    href: '#',
+    image: automotiveProjectImage,
+    href: '#/automotive-website',
   },
 ]
 
@@ -379,178 +391,60 @@ function ThemeToggle({
 }
 
 function WebsiteBuildShowcase() {
+  const tools = [
+    [toolAi, 'AI'],
+    [toolCanva, 'Canva'],
+    [toolMailchimp, 'Mailchimp'],
+    [toolElementor, 'Elementor'],
+    [toolFigma, 'Figma'],
+    [toolHtml, 'HTML5'],
+    [toolShopify, 'Shopify'],
+    [toolWordPress, 'WordPress'],
+  ]
+
   return (
-    <div className="website-build-showcase" role="img" aria-label="Animated website section building from HTML structure through CSS styling, motion design, Figma, and WordPress">
+    <div className="website-build-showcase" role="img" aria-label="Animated web design composition revealing a complete creative tool stack">
       <div className="build-ambient build-ambient-blue" />
       <div className="build-ambient build-ambient-violet" />
 
-      <div className="build-tool tool-html" aria-hidden="true">
-        <span>&lt;/&gt;</span>
-        HTML
-      </div>
-      <div className="build-tool tool-figma" aria-hidden="true">
-        <span>F</span>
-        Figma
-      </div>
-      <div className="build-tool tool-wordpress" aria-hidden="true">
-        <span>W</span>
-        WordPress
-      </div>
-
-      <div className="build-window">
-        <div className="build-window-bar">
-          <div className="build-window-controls" aria-hidden="true">
-            <span />
-            <span />
-            <span />
+      <div className="hero-design-stage" aria-hidden="true">
+        <div className="hero-art-composition">
+          <div className="hero-color-shape hero-color-shape-one" />
+          <div className="hero-color-shape hero-color-shape-two" />
+          <div className="hero-color-shape hero-color-shape-three" />
+          <div className="hero-art-photo">
+            <div className="hero-art-grid" />
+            <span className="hero-wordmark" aria-label="Beyond Pixels.">
+              <b>Beyond</b>
+              <b>Pixels.</b>
+            </span>
           </div>
-          <div className="build-window-title">
-            <span className="build-live-dot" />
-            Live website build
-          </div>
-          <span className="build-window-url">sarfaraj.design</span>
-        </div>
-
-        <div className="build-stages">
-          <div className="build-stage stage-structure">
-            <span>01</span>
-            Structure
-          </div>
-          <div className="build-stage stage-style">
-            <span>02</span>
-            Style
-          </div>
-          <div className="build-stage stage-motion">
-            <span>03</span>
-            Motion
-          </div>
-          <div className="build-stage stage-publish">
-            <span>04</span>
-            WordPress
-          </div>
-        </div>
-
-        <div className="website-canvas">
-          <div className="color-boom" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-
-          <div className="canvas-site-nav">
-            <div className="canvas-logo">SK<span>.</span></div>
-            <div className="canvas-nav-links">
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="canvas-nav-button" />
-          </div>
-
-          <div className="canvas-hero">
-            <div className="canvas-copy">
-              <div className="canvas-kicker">CREATIVE WEB STUDIO</div>
-              <div className="canvas-heading">
-                <span>Designing digital</span>
-                <span>experiences that</span>
-                <span><b>move</b> people.</span>
-              </div>
-              <div className="canvas-paragraph">
-                <span />
-                <span />
-              </div>
-              <div className="canvas-actions">
-                <span>Start a project</span>
-                <span>View work</span>
-              </div>
-            </div>
-
-            <div className="canvas-art">
-              <div className="art-shape art-shape-one" />
-              <div className="art-shape art-shape-two" />
-              <div className="art-photo">
-                <div className="art-photo-grid" />
-                <div className="art-photo-mark">S</div>
-              </div>
-              <div className="art-float-card">
-                <span>75+</span>
-                Websites
-              </div>
-            </div>
-          </div>
-
-          <div className="canvas-feature-row">
-            <div><span>01</span>UI/UX Design</div>
-            <div><span>02</span>WordPress</div>
-            <div><span>03</span>Motion</div>
-          </div>
-
-          <div className="design-cursor" aria-hidden="true">
+          <div className="hero-start-cursor">
             <svg viewBox="0 0 24 28" fill="none">
               <path d="M2 2l17 12-8 2.2L7 25 2 2z" fill="#5DD62C" stroke="white" strokeWidth="2" strokeLinejoin="round" />
             </svg>
-            <span>Designing</span>
           </div>
-
-          <div className="paint-brush" aria-hidden="true">
-            <div className="brush-tip" />
-            <div className="brush-handle" />
-          </div>
-
-          <div className="color-palette" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-
-          <div className="final-tool-stack">
-            <div className="final-tool-heading">
-              <span>Complete creative stack</span>
-              <b>Ready to launch</b>
+          <div className="hero-drawing-tools">
+            <div className="hero-pencil">
+              <span />
             </div>
-            <div className="final-tool-list">
-              {[
-                ['W', 'WordPress'],
-                ['E', 'Elementor'],
-                ['CSS', 'CSS'],
-                ['B', 'Bootstrap'],
-                ['C', 'Canva'],
-                ['S', 'Shopify'],
-                ['M', 'Mailchimp'],
-                ['B', 'Brevo'],
-                ['ML', 'MailerLite'],
-                ['H', 'HubSpot'],
-              ].map(([icon, label]) => (
-                <div className="final-tool-item" key={label}>
-                  <i>{icon}</i>
-                  {label}
-                </div>
-              ))}
-            </div>
+          </div>
+          <div className="hero-color-palette">
+            <span />
+            <span />
+            <span />
+            <span />
           </div>
         </div>
 
-        <div className="build-footer">
-          <div className="build-progress-copy">
-            <span>Creating your experience</span>
-            <strong className="build-progress-number" />
-          </div>
-          <div className="build-progress-track">
-            <div className="build-progress-fill" />
-            <div className="build-progress-spark" />
-          </div>
-          <div className="build-complete">
-            <span>✓</span>
-            Website section complete
-          </div>
+        <div className="hero-tool-orbit">
+          {tools.map(([icon, label]) => (
+            <div className="hero-tool-chip" key={label}>
+              <img src={icon} alt="" />
+            </div>
+          ))}
         </div>
       </div>
-
-      <div className="build-particle particle-one" aria-hidden="true" />
-      <div className="build-particle particle-two" aria-hidden="true" />
-      <div className="build-particle particle-three" aria-hidden="true" />
     </div>
   )
 }
