@@ -161,7 +161,7 @@ const PROCESS = [
 ]
 
 const WHY_ME = [
-  { num: '01', title: 'Practical Experience', desc: 'Hands-on experience working across 75+ WordPress websites.' },
+  { num: '01', title: 'Practical Experience', desc: 'Hands-on experience working across 95+ WordPress websites.' },
   { num: '02', title: 'Design + Development', desc: 'I understand both the visual design side and the technical implementation side.' },
   { num: '03', title: 'Attention to Detail', desc: 'I focus on spacing, responsiveness, visual consistency, and usability.' },
   { num: '04', title: 'Problem Solving', desc: 'I troubleshoot WordPress, CSS, plugin, responsive, and functionality-related issues.' },
@@ -562,13 +562,13 @@ export default function App() {
               </p>
 
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <a href="#work" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '13px 28px', backgroundColor: '#5DD62C', color: '#fff', fontSize: '15px', fontWeight: 600, borderRadius: '6px', textDecoration: 'none', transition: 'background-color 0.2s' }}
+                <a className="hero-cta-button" href="#work" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '13px 28px', backgroundColor: '#5DD62C', color: '#fff', fontSize: '15px', fontWeight: 600, borderRadius: '6px', textDecoration: 'none', transition: 'background-color 0.2s' }}
                   onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#46b51f')}
                   onMouseLeave={e => (e.currentTarget.style.backgroundColor = '#5DD62C')}>
                   View My Work
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </a>
-                <a className="hero-secondary-button" href="#contact" style={{ display: 'inline-flex', alignItems: 'center', padding: '13px 28px', backgroundColor: '#fff', color: '#111111', fontSize: '15px', fontWeight: 600, borderRadius: '6px', textDecoration: 'none', border: '1.5px solid #E5E7EB', transition: 'border-color 0.2s' }}
+                <a className="hero-cta-button hero-secondary-button" href="#contact" style={{ display: 'inline-flex', alignItems: 'center', padding: '13px 28px', backgroundColor: '#fff', color: '#111111', fontSize: '15px', fontWeight: 600, borderRadius: '6px', textDecoration: 'none', border: '1.5px solid #E5E7EB', transition: 'border-color 0.2s' }}
                   onMouseEnter={e => (e.currentTarget.style.borderColor = '#111111')}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = '#E5E7EB')}>
                   Download CV
@@ -583,7 +583,7 @@ export default function App() {
           <div style={{ display: 'flex', gap: '48px', flexWrap: 'wrap', justifyContent: 'space-between', width: '100%', paddingTop: '40px', borderTop: '1px solid #E5E7EB' }}>
             {[
               { value: '5+', label: 'Years Experience' },
-              { value: '75+', label: 'WordPress Websites' },
+              { value: '95+', label: 'WordPress Websites' },
               { value: 'UI/UX', label: 'Design & Development' },
             ].map(stat => (
               <div key={stat.label}>
@@ -609,8 +609,8 @@ export default function App() {
                 />
               </div>
               {/* Floating badge */}
-              <div className="glass-card" style={{ position: 'absolute', bottom: '32px', right: '-24px', backgroundColor: '#fff', borderRadius: '10px', padding: '20px 24px', boxShadow: '0 8px 32px rgba(0,0,0,0.10)', border: '1px solid #E5E7EB' }}>
-                <div style={{ fontSize: '28px', fontWeight: 800, color: '#5DD62C', letterSpacing: '-0.5px' }}>75+</div>
+              <div className="glass-card about-image-badge" style={{ position: 'absolute', bottom: '32px', right: '-24px', backgroundColor: '#fff', borderRadius: '10px', padding: '20px 24px', boxShadow: '0 8px 32px rgba(0,0,0,0.10)', border: '1px solid #E5E7EB' }}>
+                <div style={{ fontSize: '28px', fontWeight: 800, color: '#5DD62C', letterSpacing: '-0.5px' }}>95+</div>
                 <div style={{ fontSize: '13px', color: '#6B7280', fontWeight: 500, marginTop: '2px' }}>WordPress Websites</div>
               </div>
             </div>
@@ -625,7 +625,7 @@ export default function App() {
                 I'm a Web Designer & WordPress Developer focused on creating modern, responsive, and user-friendly websites.
               </p>
               <p style={{ fontSize: '16px', lineHeight: 1.75, color: '#6B7280', marginBottom: '20px' }}>
-                With hands-on experience across 75+ WordPress websites, I work across the complete website development process — from UI design and Figma implementation to WordPress development, customization, optimization, and deployment.
+                With hands-on experience across 95+ WordPress websites, I work across the complete website development process — from UI design and Figma implementation to WordPress development, customization, optimization, and deployment.
               </p>
               <p style={{ fontSize: '16px', lineHeight: 1.75, color: '#6B7280', marginBottom: '40px' }}>
                 I specialize in WordPress, Elementor, Divi, WooCommerce, Figma, and responsive design, with additional experience in analytics, email marketing integrations, and basic SEO tools.
@@ -633,7 +633,7 @@ export default function App() {
               <a href="#services" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '15px', fontWeight: 600, color: '#5DD62C', textDecoration: 'none', transition: 'gap 0.2s' }}
                 onMouseEnter={e => (e.currentTarget.style.gap = '10px')}
                 onMouseLeave={e => (e.currentTarget.style.gap = '6px')}>
-                More About Me →
+                Hire Me →
               </a>
             </div>
           </div>
@@ -739,7 +739,7 @@ export default function App() {
                 I build and customize WordPress websites with a focus on responsive design, usability, performance, and maintainability.
               </p>
               <div className="glass-card glass-card-dark" style={{ padding: '24px', backgroundColor: 'rgba(93,214,44,0.12)', borderRadius: '8px', border: '1px solid rgba(93,214,44,0.25)' }}>
-                <div style={{ fontSize: '32px', fontWeight: 800, color: '#5DD62C', letterSpacing: '-0.5px', marginBottom: '4px' }}>75+</div>
+                <div style={{ fontSize: '32px', fontWeight: 800, color: '#5DD62C', letterSpacing: '-0.5px', marginBottom: '4px' }}>95+</div>
                 <div style={{ fontSize: '14px', color: '#9CA3AF', fontWeight: 500 }}>WordPress websites designed, developed, customized, and maintained.</div>
               </div>
             </div>
@@ -1054,6 +1054,10 @@ export default function App() {
           }
         }
         @media (max-width: 640px) {
+          .hero-cta-button {
+            padding: 8px 17px !important;
+          }
+          section > .container > div[style*="grid-template-columns: repeat(5, 1fr)"],
           section > .container > div[style*="grid-template-columns: repeat(2, 1fr)"] {
             grid-template-columns: 1fr !important;
           }
