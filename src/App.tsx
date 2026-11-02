@@ -172,7 +172,7 @@ const FILTER_CATEGORIES = [
   { label: 'All', value: 'all' },
   { label: 'WordPress', value: 'wordpress' },
   { label: 'UI/UX', value: 'uiux' },
-  { label: 'Landing Pages', value: 'landing' },
+  { label: 'Shpify', value: 'landing' },
   { label: 'WooCommerce', value: 'woocommerce' },
 ]
 
