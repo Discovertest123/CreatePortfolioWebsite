@@ -15,7 +15,7 @@ import toolHtml from './assets/tool-html.png'
 import toolMailchimp from './assets/tool-mailchimp.png'
 import toolShopify from './assets/tool-shopify.png'
 import toolWordPress from './assets/tool-wordpress.png'
-import sarafrajResume from './assets/sarfaraj-resume.pdf'
+import sarafrajResume from './assets/Sarfaraj-resume.pdf'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
