@@ -15,6 +15,7 @@ import toolHtml from './assets/tool-html.png'
 import toolMailchimp from './assets/tool-mailchimp.png'
 import toolShopify from './assets/tool-shopify.png'
 import toolWordPress from './assets/tool-wordpress.png'
+import sarafrajResume from './assets/sarfaraj-resume.pdf'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -568,7 +569,7 @@ export default function App() {
                   View My Work
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </a>
-                <a className="hero-cta-button hero-secondary-button" href="#contact" style={{ display: 'inline-flex', alignItems: 'center', padding: '13px 28px', backgroundColor: '#fff', color: '#111111', fontSize: '15px', fontWeight: 600, borderRadius: '6px', textDecoration: 'none', border: '1.5px solid #E5E7EB', transition: 'border-color 0.2s' }}
+                <a className="hero-cta-button hero-secondary-button" href={sarafrajResume} download style={{ display: 'inline-flex', alignItems: 'center', padding: '13px 28px', backgroundColor: '#fff', color: '#111111', fontSize: '15px', fontWeight: 600, borderRadius: '6px', textDecoration: 'none', border: '1.5px solid #E5E7EB', transition: 'border-color 0.2s' }}
                   onMouseEnter={e => (e.currentTarget.style.borderColor = '#111111')}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = '#E5E7EB')}>
                   Download CV
@@ -630,7 +631,7 @@ export default function App() {
               <p style={{ fontSize: '16px', lineHeight: 1.75, color: '#6B7280', marginBottom: '40px' }}>
                 I specialize in WordPress, Elementor, Divi, WooCommerce, Figma, and responsive design, with additional experience in analytics, email marketing integrations, and basic SEO tools.
               </p>
-              <a href="#services" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '15px', fontWeight: 600, color: '#5DD62C', textDecoration: 'none', transition: 'gap 0.2s' }}
+              <a href="#contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '15px', fontWeight: 600, color: '#5DD62C', textDecoration: 'none', transition: 'gap 0.2s' }}
                 onMouseEnter={e => (e.currentTarget.style.gap = '10px')}
                 onMouseLeave={e => (e.currentTarget.style.gap = '6px')}>
                 Hire Me →
